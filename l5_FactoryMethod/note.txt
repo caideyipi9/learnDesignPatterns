@@ -1,0 +1,8 @@
+工厂方法模式基本上就是抽象工厂模式的产品部分
+区别在于，抽象方法的“产品”更多的是一个过程，只是使用了虚继承机制的延迟处理效果，得以实现扩展化，并不需要把构造器也包装起来。
+而抽象工厂中，“产品”本身更多的是一个对象化的东西，所以我们希望把构造过程也包装起来，叫做工厂。
+
+举例：
+    假如我们聚焦于Logger，有WinLogger、LinuxLogger等，那么用工厂方法就好了
+    假如要设计一个Event system，有WinKey，WinMouse，WinApp，WinWindows；LinuxKey，LinuxMouse，LinuxApp，LInuxWindows；
+    那么最好把构造器也统一到一个Factory下面。

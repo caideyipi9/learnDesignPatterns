@@ -1,0 +1,4 @@
+Product 是复杂对象，由多个独立部分组成。
+Builder 提供构造每个部分的 API。
+Director 负责调用 Builder 的 API，将 Product 组装起来。
+Client指定Builder和Director，完成复杂对象的装配。

@@ -2,14 +2,14 @@
 cmake_minimum_required(VERSION 3.10)
 
 # 设置项目名称
-project(AbstractFactoryExample)
+project(GeneratorExample)
 
 # 设置 C++ 标准
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # 添加可执行文件
-add_executable(AbstractFactoryExample Client.cpp.cpp)
+add_executable(GeneratorExample Client.cpp)
 
 # 包含当前目录，以便编译器可以找到头文件
-target_include_directories(AbstractFactoryExample PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
+target_include_directories(GeneratorExample PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
